@@ -1,0 +1,87 @@
+.movie{
+    margin-top: 70px;
+}
+.searchMovie{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
+    
+    & input{
+        cursor: pointer;
+        flex-grow: 1;
+    outline: none;
+    height: 44px;
+    background: #ececec4f;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+    font-size: 20px;
+    color: white;
+    font-family: ui-monospace;
+    padding: 0px 10px;
+    caret-color: white;
+    color:#ff4ea7;
+    }
+    & button{
+        cursor: pointer;
+        width: 45px;
+    height: 49px;
+    background-color: #ff4ea7;
+    color: white;
+    flex-shrink: 0;
+    padding-bottom: 8px;
+    padding-top:9px;
+    
+    & .iconSearch{
+        transition: 0.5;
+    }
+    
+    &:hover .iconSearch{
+        transform: scale(1.5);
+    }
+    }
+}
+::placeholder{
+    color: #ff4ea7;
+}
+.input{
+    width: 95%;
+    position: relative;
+
+    & input{
+        width: 100%;
+    }
+
+    & .close{
+        position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 2px;
+    color: #ff4ea7;
+    cursor: pointer;
+    z-index: 2;
+        
+    }
+    & .spinner{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 2px;
+        color: #ff4ea7;
+        animation: rotation 1s forwards infinite;
+        transform-origin:50% 0%;
+        cursor: pointer;
+        z-index: 1;
+    }
+    @keyframes rotation{
+        from{
+            transform: rotate(0deg) translateY(-50%);
+        }
+        to{
+            transform: rotate(360deg) translateY(-50%);
+        }
+    }
+}

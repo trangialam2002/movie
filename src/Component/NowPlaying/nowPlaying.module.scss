@@ -1,0 +1,29 @@
+.Playing{
+    width: 90%;
+    margin: 0 auto;
+}
+.topPlaying{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    & h3{
+        font-size: 20px;
+    font-family: cursive;
+    margin-top: 20px;
+    }
+}
+.left_right{
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.left,.right{
+    background-color: rgba(236, 236, 236, 0.368627451);
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    padding: 4px;
+}

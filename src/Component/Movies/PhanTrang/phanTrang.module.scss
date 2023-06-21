@@ -1,0 +1,36 @@
+.pages{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 50px;
+
+    & ul{
+        display: flex;
+    width: 225px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 20px;
+    font-size: 18px;
+    font-family: system-ui;
+    }
+
+    & li {
+        list-style: none;
+        color: #ff4ea7;
+        background: white;
+        padding: 0 8px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+}
+.left, .right{
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+.active{
+    background-color: #ff4ea7!important;
+    color: white!important;
+}

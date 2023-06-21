@@ -1,0 +1,127 @@
+.boxPlaying{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 50px;
+    scroll-behavior: smooth;
+    overflow: hidden;
+
+    &:hover .itemPlaying{
+        opacity: 0.5;
+    }
+}
+.boxPlaying2{
+    overflow: visible;
+    flex-wrap: wrap;
+}
+.itemPlaying{
+    width: 15%;
+    background: #3c3a3f;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: 0.5s;
+    flex-shrink: 0;
+    user-select: none;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+
+    &:hover{
+        opacity: 1!important;
+        transform: scale(1.1);
+        z-index: 10;
+    }
+    
+
+    & img{
+        width: 100%;
+        height: 55%;
+        object-fit: cover;
+        flex-shrink: 0;
+        border-radius: inherit;
+    }
+    & p {
+        margin-top: 5px;
+        font-size: 15px;
+        color: white;
+        font-family: cursive;
+        padding: 0px 0;
+        width: 100%;
+        text-align: center;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        height: 65px;
+        align-items: center;
+    }
+}
+.point{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    font-size: 10px;
+    width: 100%;
+    color: white;
+    flex-shrink: 0;
+
+    & span{
+        height: 15px;
+        font-size: 10px;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 42px;
+    }
+}
+.star{
+    color:#f2ad3c;
+    font-size: 20px;
+}
+.iconWatch{
+    position: absolute;
+    color: white;
+    right: 35px;
+    font-size: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.watch{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    height: 40px;
+    position: relative;
+}
+.plus{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #ffffff75;
+    top: 20px;
+    right: 20px;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cursive;
+    background-color: #ff4ea7;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
